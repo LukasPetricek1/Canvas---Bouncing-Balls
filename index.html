@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Canvas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <canvas>
+        Your browser does not support canvas.
+    </canvas>
+
+    <!-- <script>
+        const c = document.querySelector("canvas")
+        // K tomu abychom mohli cokoliv do <canvas> kreslit, tak potřebujeme napřed vytvořit plátno. To si jde představit jako plátno.
+        const ctx = c.getContext("2d")
+
+        // Lepší způsob jak vykreslit obrázek.
+        // Dalším způsobem je vytvořit prvek <img> v HTML, skrýt jej { display : none } a odkazovat na něj přes javascript document.get...
+        const image = document.createElement("img")
+        image.src = "./logo.png"
+
+        function drawImage(){ 
+            /*
+                naturalWidth / naturalHeight jsou původní velikosti daného obrázku nebo přesněji objektu
+            */
+            // c.width = this.naturalWidth
+            // c.height = this.naturalHeight
+
+            ctx.drawImage(this, 0,0,this.width, this.height)
+        }
+
+        // obrázek tímto způsobem můžeme vykreslit až po jeho načtení, jinak by se nevykreslilo nic, protože by se canvas snažil vykreslit něco, co ještě v danou dobu neexistuje
+        image.addEventListener("load" , drawImage)
+
+    </script> -->
+
+    <script src="index.js"></script>
+
+</body>
+</html>
