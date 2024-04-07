@@ -1,0 +1,98 @@
+*{ 
+    padding:0;
+    margin:0;
+    font-family: "Cookie" , cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+table{ 
+    height:auto;
+    width:90vw;
+    min-width:500px;
+}
+
+table thead th{ 
+    color:aqua;
+    font-size:3rem
+}
+
+table thead tr{ 
+    cursor:text;
+}
+
+table tr{ 
+    text-align: center;
+    font-size:2rem;
+    color:white;
+    transition:.5s;
+    cursor:pointer
+}
+
+.new-game{ 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    color:white
+}
+
+.new-game:hover{
+    transform: scale(2);
+}
+
+.new-game h1{ 
+    margin-left:10px;
+}
+
+.fa-xmark{
+    color:red;
+    transition: .5s ;
+}
+
+@media screen and (max-width:1550px){ 
+    table thead th{ 
+        font-size:2rem;
+    }
+    table tr{ 
+        font-size:1.5rem
+    }
+}
+
+@media screen and (max-width:950px){ 
+    table thead th{ 
+        font-size:1.5rem;
+    }
+    table tr{ 
+        font-size:1rem
+    }
+}
+
+@media screen and (max-width:700px){ 
+    table thead th{ 
+        font-size:1rem;
+    }
+    table tr{ 
+        font-size:0.5rem
+    }
+}
+
+@media screen and (max-width:500px){ 
+    table{
+        overflow-x:auto;
+    }
+}
