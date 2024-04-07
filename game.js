@@ -74,6 +74,13 @@ function getDate() {
     minute: date.getMinutes(),
     second: date.getSeconds(),
   };
+
+  while(String(object.minute).length < 2){ 
+    object.minute = `0${object.minute}`
+  }
+  while (String(object.second).length < 2) {
+    object.second = `0${object.second}`;
+  }
   return `${object.day}.${object.month}.${object.year}; ${object.hour}:${object.minute}:${object.second}`;
 }
 
